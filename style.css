@@ -1,0 +1,21 @@
+.accordion__item {}
+
+.accordion__item-input {
+    display: none;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.accordion__item-input:checked~.accordion__item-descr {
+    display: block;
+
+}
+
+.accordion__item-header:hover~.accordion__item-descr {
+    display: block;
+}
+
+.accordion__item-descr {
+    display: none;
+}
