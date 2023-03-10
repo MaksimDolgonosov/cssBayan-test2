@@ -1,10 +1,13 @@
 .accordion__item {}
 
+.accordion__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .accordion__item-input {
     display: none;
-    top: 0;
-    right: 0;
-    opacity: 0;
 }
 
 .accordion__item-input:checked~.accordion__item-descr {
@@ -12,9 +15,20 @@
 
 }
 
+.accordion__item-input:checked~.accordion__item-header>.accordion__item-header-icon {
+    transform: rotate(45deg);
+
+}
+.accordion__item-header:hover>.accordion__item-header-icon {
+    transform: rotate(45deg);
+
+}
+
 .accordion__item-header:hover~.accordion__item-descr {
     display: block;
 }
+
+
 
 .accordion__item-descr {
     display: none;
