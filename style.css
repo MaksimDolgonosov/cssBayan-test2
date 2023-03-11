@@ -1,4 +1,23 @@
-.accordion__item {}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #dfd9c99c;
+    padding: 30px 60px;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 40px;
+    border-bottom: 2px solid rgba(156, 155, 155, 0.747);
+}
+
+.accordion__item {
+    cursor: pointer;
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
 
 .accordion__item-header {
     display: flex;
@@ -19,6 +38,7 @@
     transform: rotate(45deg);
 
 }
+
 .accordion__item-header:hover>.accordion__item-header-icon {
     transform: rotate(45deg);
 
