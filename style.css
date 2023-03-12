@@ -1,7 +1,9 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-
+label {
+    cursor: pointer;
+}
 .accordion__item-input {
     display: none;
 }
@@ -10,7 +12,7 @@
     width: 60%;
     margin: 0 auto;
     background-color: #dfd9c99c;
-    padding: 0px 60px 20px 60px;
+    padding: 0px 4rem 2rem 4rem;
     border-radius: 1%;
     transition: .5s all;
 }
@@ -26,17 +28,19 @@
 h1 {
     margin: 0;
     padding: 25px 0 10px 0;
-    font-size: 34px;
-    border-bottom: 2px solid rgba(156, 155, 155, 0.747);
+    font-size: 2em;
+    border-bottom: .15rem solid rgba(156, 155, 155, 0.747);
 }
 
 .accordion__item {
-    cursor: pointer;
-    border-bottom: 2px solid rgba(156, 155, 155, 0.747);
+
+    border-bottom: .15rem solid rgba(156, 155, 155, 0.747);
     transition: .5s all;
 }
+
 .accordion__item-lable {
-    cursor: pointer;
+
+    transition: .5s all;
 }
 
 
@@ -52,10 +56,6 @@ h1 {
     fill: blue;
 }
 
-.accordion__item-header:hover {
-    cursor: pointer;
-
-}
 
 .accordion__item-header {
     padding-top: 10px;
@@ -79,12 +79,11 @@ h1 {
     padding-bottom: 10px;
     opacity: 0;
     overflow: hidden;
-    height: 0px;
+    height: 0;
 }
 
 .accordion__item-descr img {
     width: 100%;
-
 }
 
 
@@ -102,12 +101,12 @@ h1 {
 
 }
 
-.accordion__item-input:checked~.accordion__item-header>.accordion__item-header-icon {
+.accordion__item-input:checked~.accordion__item-label>.accordion__item-header>.accordion__item-header-icon {
     transform: rotate(45deg);
 
 }
 
-.accordion__item-header:hover>.accordion__item-header-icon {
+.accordion__item-label:hover>.accordion__item-header>.accordion__item-header-icon {
     transform: rotate(45deg);
 
 }
@@ -118,8 +117,9 @@ h1 {
     opacity: 1;
     overflow: visible;
     height: 100%;
-    transition: .5s all;
+    transition: 1s all;
 }
+
 .accordion__item-label:hover {
     cursor: pointer;
 
